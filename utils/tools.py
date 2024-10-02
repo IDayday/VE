@@ -107,7 +107,7 @@ def sample_and_preprocess_batch(replay_buffer, t, tag=None, batch_size=1024, sta
         batch = replay_buffer.her_final_batch(batch_size)
     elif tag == "buffer":
         batch = replay_buffer.buffer_random_batch(batch_size)
-        candidate_goal = replay_buffer.random_state_batch(10, state_dim)
+        candidate_goal = replay_buffer.random_state_batch(500, state_dim)
         batch, _ = Select_relabel_goal(batch, candidate_goal, de, mean_density)
 
     state_batch         = batch["observations"]

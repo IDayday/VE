@@ -1,13 +1,13 @@
-This is the open source code of ICLR2025 submission paper: Goal-Conditioned Reinforcement Learning with Virtual Experiences.
+This is the open source code of ICML2025 submission paper: Improving Subgoal Planning Policy with Self-Supervised Learning.
 
 ## AntMaze
 
-To train VE on the U-shaped ant maze environment, please run:
+To train SPS on the U-shaped ant maze environment, please run:
 ```
 python train_ant.py --env_name AntU
 ```
 
-Use this table to run VET on other ant maze navigation tasks:
+Use this table to run SPS on other ant maze navigation tasks:
 
 | Environment                | --env_name |  
 | -------------------------- |:----------:| 
